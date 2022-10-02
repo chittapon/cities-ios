@@ -22,7 +22,7 @@ final class GetCityListUseCase: GetCityListUseCaseProtocol {
     }
     
     func excute() -> Observable<[City]> {
-        let url = AppConfig.shared.baseURL.appendingPathComponent("SiriusiOS/ios-assignment/main/cities.json")
+        let url = appConfig.baseURL.appendingPathComponent("SiriusiOS/ios-assignment/main/cities.json")
         let request = URLRequest(url: url)
         return network.request(request)
     }

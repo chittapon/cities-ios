@@ -28,6 +28,7 @@
 		50BD95FD28CC819000731768 /* CitiesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD95FC28CC819000731768 /* CitiesUITestsLaunchTests.swift */; };
 		50BD960A28CCC68200731768 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD960928CCC68200731768 /* SearchViewController.swift */; };
 		50BD960C28CCF5E600731768 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BD960B28CCF5E600731768 /* MapViewController.swift */; };
+		50E8847C28E989CC00D4CA4A /* Array+BinarySearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E8847B28E989CC00D4CA4A /* Array+BinarySearch.swift */; };
 		764D744EF23D2F49F63FDD96 /* Pods_Cities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA123A58452DA002CC83D5EA /* Pods_Cities.framework */; };
 		EE59B4894CD990EC7F449EDD /* Pods_Cities_CitiesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED8FCF21526441BF9D6EC14 /* Pods_Cities_CitiesUITests.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		50BD95FC28CC819000731768 /* CitiesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		50BD960928CCC68200731768 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		50BD960B28CCF5E600731768 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		50E8847B28E989CC00D4CA4A /* Array+BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+BinarySearch.swift"; sourceTree = "<group>"; };
 		550F32091A186281E91ED762 /* Pods-CitiesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitiesTests.release.xcconfig"; path = "Target Support Files/Pods-CitiesTests/Pods-CitiesTests.release.xcconfig"; sourceTree = "<group>"; };
 		B2589655AF227BAAFCDDAFDB /* Pods-Cities.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cities.debug.xcconfig"; path = "Target Support Files/Pods-Cities/Pods-Cities.debug.xcconfig"; sourceTree = "<group>"; };
 		BA123A58452DA002CC83D5EA /* Pods_Cities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -216,6 +218,7 @@
 				503B18D028CF56C6007A2299 /* Application */,
 				503B18CC28CF5638007A2299 /* Data */,
 				503B18CD28CF5652007A2299 /* Domain */,
+				50E8847A28E989B400D4CA4A /* Extensions */,
 				50BD95E428CC819000731768 /* LaunchScreen.storyboard */,
 			);
 			path = Cities;
@@ -239,6 +242,14 @@
 				50BD95FC28CC819000731768 /* CitiesUITestsLaunchTests.swift */,
 			);
 			path = CitiesUITests;
+			sourceTree = "<group>";
+		};
+		50E8847A28E989B400D4CA4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50E8847B28E989CC00D4CA4A /* Array+BinarySearch.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A1224985600883B38D518F1D /* Pods */ = {
@@ -511,6 +522,7 @@
 				50BD95DA28CC819000731768 /* AppDelegate.swift in Sources */,
 				50BD95DC28CC819000731768 /* SceneDelegate.swift in Sources */,
 				503D170028CF3A1A00436DE0 /* CityViewModel.swift in Sources */,
+				50E8847C28E989CC00D4CA4A /* Array+BinarySearch.swift in Sources */,
 				503D170228CF3CF500436DE0 /* CityTableViewCell.swift in Sources */,
 				503D170428CF3E1900436DE0 /* GetCityListUseCase.swift in Sources */,
 				50BD960C28CCF5E600731768 /* MapViewController.swift in Sources */,

@@ -20,6 +20,6 @@ final class MapViewController: UIViewController {
     
     private func setup() {
         title = city.name
-        mapView.showAnnotations([city], animated: true)
+        mapView.showAnnotations([city.toAnnotation()], animated: true)
     }
 }

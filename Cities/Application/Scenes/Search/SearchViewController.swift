@@ -87,11 +87,10 @@ extension SearchViewController: UISearchResultsUpdating {
     
     func updateSearchResults(for searchController: UISearchController) {
         guard let resultVC = searchController.searchResultsController as? SearchResultViewController,
-              let text = searchController.searchBar.text else {
+              let text = searchController.searchBar.text, !text.isEmpty else {
                   return
               }
-        let predicate = NSPredicate(format: "name BEGINSWITH[c] %@", text)
-        let result = (items as NSArray).filtered(using: predicate) as? [CityViewModel] ?? []
+        let result = items.binarySearchFilter(key: .make(searchText: text))
         resultVC.update(result: result)
     }
     
