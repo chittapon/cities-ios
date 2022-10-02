@@ -49,6 +49,6 @@ final class SearchViewControllerTests: XCTestCase {
             City(country: "A", name: "A", id: 1, coordinate: .init(lat: 1, lon: 2)),
             City(country: "D", name: "D", id: 4, coordinate: .init(lat: 1, lon: 2)),
             City(country: "B", name: "B", id: 2, coordinate: .init(lat: 1, lon: 2))
-        ].map(CityViewModel.init)
+        ].map(CityViewModel.init).sorted()
     }
 }
